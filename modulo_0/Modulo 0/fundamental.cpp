@@ -3,9 +3,34 @@
 #include <cstdint>
 
 int main() {
-    std::uint8_t a = 6;          // 0000 0110
-    std::uint8_t b = 0b00001011; // 0000 1011
-    std::uint8_t c = a & 1;
-    std::cout << c << '\n';
+    /*
+    std::uint8_t a = 1;
+
+    std::cout << "Inicial:\n";
+    std::cout << std::bitset<8>(a) << '\n';
+
+    a <<= 6;
+    std::cout << "Despues de a <<= 6:\n";
+    std::cout << std::bitset<8>(a) << '\n';
+
+    a >>= 4;
+    std::cout << "Despues de a >>= 4:\n";
+    std::cout << std::bitset<8>(a) << '\n';
+
+    return 0;
+    */
+    std::uint32_t a = 1;
+
+    std::cout << "Inicial:\n";
+    std::cout << std::bitset<32>(a) << '\n';
+
+    a <<= 32;
+    std::cout << "Despues de a <<= 32:\n";
+    std::cout << std::bitset<32>(a) << '\n';
+
+    a >>= 4;
+    std::cout << "Despues de a >>= 4:\n";
+    std::cout << std::bitset<8>(a) << '\n';
+
     return 0;
 }
