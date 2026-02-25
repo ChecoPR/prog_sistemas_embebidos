@@ -136,7 +136,7 @@ Usa:
 
 ---
 
-# Parte 6 — Desafío extra (opcional)
+# Parte 6 — Desafío
 
 Haz un pequeño "simulador de cajero":
 
