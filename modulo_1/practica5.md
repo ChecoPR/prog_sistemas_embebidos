@@ -78,13 +78,17 @@ void setup() {
     Serial.print("IP: ");
     Serial.println(WiFi.localIP());
 }
+
+void loop() {
+    // vacío por ahora
+}
 ```
 
 ### Antes de continuar
 
 1. Reemplaza `TU_RED` y `TU_CLAVE` con los datos de tu red.
-2. Carga solo este bloque (con un `loop()` vacío) y verifica en el **Monitor Serie** que aparezca la IP.
-3. Anota la IP. La necesitarás para abrir el servidor desde el navegador.
+2. Carga este programa y abre el **Monitor Serie** (115200 baud).
+3. Espera hasta ver la IP impresa. Anótala.
 
 **No continúes hasta tener la IP en el Monitor Serie.**
 
