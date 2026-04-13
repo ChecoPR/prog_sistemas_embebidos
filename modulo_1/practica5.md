@@ -476,21 +476,3 @@ Completar en orden:
 4. ¿Qué pasaría si reemplazas `handle_raiz` con una función que lee un sensor DHT11 real? ¿Qué parte del código cambiaría y qué parte quedaría igual?
 
 5. ¿Por qué el servidor devuelve el código `200`? ¿Qué significaría devolver `404`?
-
----
-
-## 14. Extensión opcional
-
-Agrega una segunda ruta `/json` que devuelva las lecturas en formato JSON en lugar de HTML:
-
-```
-http://IP_DEL_ESP/json
-```
-
-Salida esperada:
-
-```json
-{"lecturas": [21.3, 22.1, 23.0, 22.7, 21.9]}
-```
-
-Pista: usa `server.on("/json", handle_json)` y `server.send(200, "application/json", ...)`.
