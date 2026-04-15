@@ -35,8 +35,6 @@ using ullim        = std::numeric_limits<unsigned long>;
 using index_vector = std::vector<std::uint_least64_t>;
 ```
 
-**Recomendación:** "¡Prefiere `using` sobre el obsoleto `typedef`! Más adelante veremos por qué es más poderoso."
-
 ---
 
 ## Deducción de tipos: `auto` `[C++11]`
